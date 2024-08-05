@@ -1,0 +1,22 @@
+﻿create database xinxi;
+use xinxi;
+create table login (root char(50) PRIMARY KEY,password char(50),zhiye int);
+create table teacher (name char(50),sex char(20),dianhua char(50) PRIMARY KEY,shouke char(50));
+create table student (banji int,sno int,name char(50),sex char(10),dianhua char(50) PRIMARY KEY);
+insert into login values ('01','01');
+insert into login values ('02','02');
+insert into login values ('03','03');
+insert into teacher values ('刘桑','男','13202674823','语文');
+insert into teacher values ('陈桑','女','18712679823','数学');
+insert into teacher values ('李露','女','18774490784','英语');
+insert into teacher values ('袁桑','女','13202515422','科学');
+insert into teacher values ('刘二','男','13202452528','语文');
+insert into teacher values ('李四','男','17986355858','数据结构');
+insert into student values (2206801,11,'王条条','女','18739524789');
+insert into student values (2206803,12,'李薇薇','女','13878425852');
+insert into student values (2206801,15,'刘莉莉','女','17823652236');
+insert into student values (2206801,18,'李文','男','14856259662');
+insert into student values (2206803,20,'张杰','男','19522355535');
+insert into student values (2206803,25,'晏子千','男','16982332255');
+insert into student values (2206803,28,'刘佳佳','女','14788522687');
+
